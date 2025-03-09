@@ -10,5 +10,6 @@ export default defineConfig({
   ],
   server: {
     historyApiFallback: true
-  }
+  },
+  base: '/branchX-KSM/'
 })

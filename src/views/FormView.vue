@@ -152,7 +152,7 @@ export default {
 
       setTimeout(() => {
         console.log("Pengajuan berhasil:", formData.value);
-        router.push("/success"); // Navigasi ke halaman sukses
+        router.push("/branchX-KSM/success"); // Navigasi ke halaman sukses
       }, 1000);
     };
 

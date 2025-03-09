@@ -6,7 +6,7 @@
       </h1>
       <p class="text-gray-600 mt-2">Terima kasih, pengajuan Anda telah kami terima.</p>
 
-      <router-link to="/" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg inline-block">
+      <router-link to="/branchX-KSM" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg inline-block">
         Kembali ke Beranda
       </router-link>
     </div>

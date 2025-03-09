@@ -15,10 +15,10 @@
             </button>
           </div>
           <nav :class="{ 'hidden': !open, 'flex': open }" class="flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-            <router-link class="nav-link" to="/#home">Home</router-link>
-            <router-link class="nav-link" to="/#ksmSimulation">KSM Simulation</router-link>
-            <router-link class="nav-link" to="/#contact">Contact</router-link>
-            <router-link class="nav-link daftar" to="/form">Daftar</router-link>
+            <router-link class="nav-link" to="/branchX-KSM">Home</router-link>
+            <router-link class="nav-link" to="/branchX-KSM/#ksmSimulation">KSM Simulation</router-link>
+            <router-link class="nav-link" to="/branchX-KSM/#contact">Contact</router-link>
+            <router-link class="nav-link daftar" to="/branchX-KSM/form">Daftar</router-link>
           </nav>
         </div>
       </div>

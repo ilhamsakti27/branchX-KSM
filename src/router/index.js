@@ -10,12 +10,17 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/form',
+    path: '/branchX-KSM',
+    name: 'Home',
+    component: HomeView
+  },
+  {
+    path: '/branchX-KSM/form',
     name: 'Form',
     component: FormView
   },
   {
-    path: '/success',
+    path: '/branchX-KSM/success',
     name: 'Succes',
     component: SuccessView
   }
