@@ -6,7 +6,7 @@
     </div>
 
     <div class="mt-4">
-      <h5 class="mb-0.5 poppins-light text-lg tracking-tight text-gray-900 dark:text-white">Perkiraan Tanggal Angsuran</h5>
+      <h5 class="mb-0.5 poppins-light text-lg tracking-tight text-gray-900 dark:text-white">Perkiraan Angsuran</h5>
       <p class="poppins-medium text-3xl text-black dark:text-gray-400">
         <span>Rp</span> {{ formattedLoanAmount }}
       </p>
