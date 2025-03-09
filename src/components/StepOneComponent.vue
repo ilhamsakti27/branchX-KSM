@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 class="poppins-semibold text-lg md:text-xl">Permohonan Nasabah</h4>
+    <h4 class="poppins-semibold text-lg md:text-xl text-center">Permohonan Nasabah</h4>
 
     <BaseRadio 
       v-model="formData.jenisPengajuan" 

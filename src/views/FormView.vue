@@ -23,6 +23,9 @@
           <div v-if="step === 5">
             <StepFiveComponent :formData="formData"/>
           </div>
+          <div v-if="step === 6">
+            <StepSixComponent :formData="formData"/>
+          </div>
 
           <StepNavigation 
             :curretStep="step"
@@ -48,6 +51,7 @@ import StepTwoComponent from '../components/StepTwoComponent.vue';
 import StepThreeComponent from '../components/StepThreeComponent.vue';
 import StepFourComponent from '../components/StepFourComponent.vue';
 import StepFiveComponent from '../components/StepFiveComponent.vue';
+import StepSixComponent from '../components/StepSixComponent.vue';
 import FooterComponent from '../components/FooterComponent.vue';
 import StepNavigation from '../components/StepNavigation.vue';
 import ProgresTab from '../components/ProgresTab.vue';
@@ -60,6 +64,7 @@ export default {
     StepThreeComponent,
     StepFourComponent,
     StepFiveComponent,
+    StepSixComponent,
     FooterComponent,
     StepNavigation,
     ProgresTab,
@@ -67,7 +72,7 @@ export default {
   setup() {
     const router = useRouter();
     const step = ref(1);
-    const totalStep = 5;
+    const totalStep = 6;
     const formData = ref({
       jenisPengajuan: 'baru',
       tujuanPinjaman: '',

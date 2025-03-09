@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 class="poppins-semibold text-lg md:text-xl">Data Pekerjaan</h4>
+    <h4 class="poppins-semibold text-lg md:text-xl text-center">Data Pekerjaan</h4>
 
     <BaseInput v-model="formData.peminjamPekerjaanNamaPerusahaan" label="Nama Perusahaan" type="text" placeholder="Bank Mandiri KCP Jakarta Puri Kencana"/>
     <BaseInput v-model="formData.peminjamPekerjaanNIP" label="No Induk Pegawai" type="text" max="16" placeholder="1234567890"/>
@@ -61,15 +61,18 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { onMounted, defineProps } from "vue";
 import BaseInput from "./BaseInputComponent.vue";
 import BaseSelect from "./BaseSelectComponent.vue";
-import BaseRadio from "./BaseRadioComponent.vue";
 
-export default {
-  components: { BaseInput, BaseSelect, BaseRadio },
-  props: {
-    formData: Object
-  }
-};
+// Scroll ke atas saat komponen dimuat
+onMounted(() => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+});
+
+// Mendefinisikan properti (props)
+defineProps({
+  formData: Object,
+});
 </script>

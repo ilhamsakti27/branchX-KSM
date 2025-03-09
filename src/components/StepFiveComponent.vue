@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h4 class="poppins-semibold text-lg md:text-xl">Pelunasan Pinjaman Nasabah</h4>
+    <h4 class="poppins-semibold text-lg md:text-xl text-center">Pelunasan Pinjaman Nasabah</h4>
+    <p class="poppins-light text-[#575F6E] text-start text-red-500 mt-1.5">*Khusus pengajuan pelunasan</p>
 
     <BaseRadio 
       v-model="formData.pelunasanTipeInstitusi" 
@@ -37,15 +38,18 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { onMounted, defineProps } from "vue";
 import BaseInput from "./BaseInputComponent.vue";
-import BaseSelect from "./BaseSelectComponent.vue";
 import BaseRadio from "./BaseRadioComponent.vue";
 
-export default {
-  components: { BaseInput, BaseSelect, BaseRadio },
-  props: {
-    formData: Object
-  }
-};
+// Scroll ke atas saat komponen dimuat
+onMounted(() => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+});
+
+// Mendefinisikan properti (props)
+defineProps({
+  formData: Object,
+});
 </script>
