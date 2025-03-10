@@ -29,7 +29,13 @@
         { value: '72', label: '6 tahun/ 72 bulan' },
         { value: '84', label: '7 tahun/ 84 bulan' },
         { value: '96', label: '8 tahun/ 96 bulan' },
-        { value: '108', label: '9 tahun/ 108 bulan' }
+        { value: '108', label: '9 tahun/ 108 bulan' },
+        { value: '120', label: '10 tahun/ 120 bulan' },
+        { value: '132', label: '11 tahun/ 132 bulan' },
+        { value: '144', label: '12 tahun/ 144 bulan' },
+        { value: '156', label: '13 tahun/ 156 bulan' },
+        { value: '168', label: '14 tahun/ 168 bulan' },
+        { value: '180', label: '15 tahun/ 180 bulan' },
       ]"
     />
 
@@ -46,15 +52,19 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { onMounted, defineProps } from "vue";
 import BaseInput from "./BaseInputComponent.vue";
 import BaseSelect from "./BaseSelectComponent.vue";
 import BaseRadio from "./BaseRadioComponent.vue";
 
-export default {
-  components: { BaseInput, BaseSelect, BaseRadio },
-  props: {
-    formData: Object
-  }
-};
+// Scroll ke atas saat komponen dimuat
+onMounted(() => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+});
+
+// Mendefinisikan properti (props)
+defineProps({
+  formData: Object,
+});
 </script>
