@@ -32,6 +32,16 @@
               <option value="36">36 bulan/ 3 tahun</option>
               <option value="48">48 bulan/ 4 tahun</option>
               <option value="60">60 bulan/ 5 tahun</option>
+              <option value="72">72 bulan/ 6 tahun</option>
+              <option value="84">84 bulan/ 7 tahun</option>
+              <option value="96">96 bulan/ 8 tahun</option>
+              <option value="108">108 bulan/ 9 tahun</option>
+              <option value="120">120 bulan/ 10 tahun</option>
+              <option value="132">132 bulan/ 11 tahun</option>
+              <option value="144">144 bulan/ 12 tahun</option>
+              <option value="156">156 bulan/ 13 tahun</option>
+              <option value="168">168 bulan/ 14 tahun</option>
+              <option value="180">180 bulan/ 15 tahun</option>
             </select>
           </div>
 
